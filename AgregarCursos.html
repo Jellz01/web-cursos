@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"> <!-- Reuse the main.css for uniform styling -->
+    <link rel="stylesheet" href="StylesAgCursos.css"> <!-- Additional styling for the form -->
+    <title>Gestión de Cursos</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">CursosOnline</div>
+            <div class="nav-links">
+                <a href="Main.html">Inicio</a>
+                <a href="Cursos.html">Cursos</a>
+                <a href="AgCurso.html">Agregar Curso</a>
+                <a href="Contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Agregar un Nuevo Curso</h1>
+            <div id="message" class="hide"></div>
+
+            <form id="courseForm" class="course-form">
+                <label for="courseName">Nombre del Curso</label>
+                <input type="text" id="courseName" required>
+
+                <label for="instructorName">Nombre del Instructor</label>
+                <input type="text" id="instructorName" required>
+
+                <label for="startDate">Fecha de Inicio</label>
+                <input type="date" id="startDate" required>
+
+                <label for="duration">Duración (semanas)</label>
+                <input type="number" id="duration" required>
+
+                <label for="description">Descripción</label>
+                <textarea id="description" required></textarea>
+
+                <button type="submit" class="btn-primary">Agregar Curso</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="AgCurso.js"></script>
+
+</body>
+</html>
